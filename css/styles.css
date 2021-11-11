@@ -8,12 +8,50 @@
   --primary-background-color: #f5f4fa;
   --secondary-background-color: #2f303a;
   --button-hover-color: #188ce8;
+  --header-border-color: #ececec;
+  --works-item-border-color: #eeeeee;
 }
 
 body {
   background-color: var(--white-text-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  padding-left: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+.header {
+  border: 1px solid var(--header-border-color);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .link {
@@ -37,6 +75,8 @@ body {
 
 .list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .site-nav-link {
@@ -70,6 +110,8 @@ body {
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -80,6 +122,8 @@ body {
 }
 
 .button {
+  min-width: 200px;
+  padding: 10px 32px;
   color: var(--white-text-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -91,6 +135,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
 }
 
 .button:hover,
@@ -101,6 +148,8 @@ body {
 /* section */
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -111,7 +160,14 @@ body {
 
 /* peculiarities */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .peculiarities-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -126,6 +182,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* activity */
+
+.section-activity {
+  padding-bottom: 94px;
+}
+
 /* our team */
 
 .section-team {
@@ -134,9 +196,16 @@ body {
 
 .team-item {
   background-color: var(--white-text-color);
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
 }
 
 .team-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -156,10 +225,14 @@ body {
 
 .footer {
   background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer .logo {
+.footer-logo {
+  display: inline-block;
   color: var(--white-text-color);
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -172,6 +245,8 @@ body {
 }
 
 .footer-contact {
+  display: inline-block;
+  margin-top: 9px;
   color: var(--footer-text-color);
   font-style: normal;
   font-weight: 400;
@@ -190,6 +265,7 @@ body {
 /* portfolio */
 
 .btn {
+  padding: 6px 22px;
   color: var(--title-text-color);
   background-color: var(--primary-background-color);
   font-family: inherit;
@@ -199,6 +275,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
+  border-color: transparent;
 }
 
 .btn:hover,
@@ -207,7 +285,19 @@ body {
   background-color: var(--accent-color);
 }
 
+.works {
+  margin-top: 50px;
+}
+
+.works-item {
+  padding-bottom: 20px;
+  border: 1px solid var(--works-item-border-color);
+  width: 370px;
+}
+
 .works-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
