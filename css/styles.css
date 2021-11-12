@@ -20,18 +20,26 @@ body {
 
 ul {
   padding-left: 0;
-}
-
-p {
+  list-style: none;
   margin-top: 0;
   margin-bottom: 0;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 img {
+  max-width: 100%;
   display: block;
+  height: auto;
 }
 
 .container {
+  margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -77,12 +85,6 @@ img {
 
 .tiny-logo {
   color: var(--accent-color);
-}
-
-.list {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .site-nav {
@@ -143,7 +145,6 @@ img {
 }
 
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
   width: 696px;
   margin-left: auto;
@@ -182,7 +183,6 @@ img {
 /* section */
 
 .section-title {
-  margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -199,7 +199,7 @@ img {
 
 /* peculiarities */
 
-.peculiarities {
+.peculiarities-list {
   display: flex;
 }
 
@@ -213,7 +213,6 @@ img {
 }
 
 .peculiarities-title {
-  margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -232,7 +231,7 @@ img {
 /* activity */
 
 .section-activity {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .activity-list,
@@ -253,15 +252,18 @@ img {
 
 .team-item {
   background-color: var(--white-text-color);
-  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
 }
 
+.team-desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
@@ -271,7 +273,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.team-desc {
+.team-subtitle {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -292,6 +294,10 @@ img {
   margin-bottom: 20px;
 }
 
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-address {
   color: var(--white-text-color);
   font-style: normal;
@@ -303,7 +309,6 @@ img {
 
 .footer-contact {
   display: inline-block;
-  margin-top: 9px;
   color: var(--footer-text-color);
   font-style: normal;
   font-weight: 400;
@@ -351,12 +356,9 @@ img {
 }
 
 .works {
-  margin-top: 50px;
-}
-
-.works-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .works-item {
@@ -372,13 +374,14 @@ img {
 }
 
 .works-item-desc {
+  padding-top: 20px;
+  padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
   border: 1px solid var(--works-item-border-color);
 }
 
 .works-title {
-  margin-top: 20px;
   margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
