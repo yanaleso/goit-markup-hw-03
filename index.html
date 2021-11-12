@@ -16,20 +16,20 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <nav>
+        <div class="container header-row">
+            <nav class="main-nav">
                 <a href="./index.html" class="logo link" lang="en"><span class="tiny-logo">Web</span>Studio</a>
             
                 <ul class="site-nav list">
-                    <li><a href="./index.html" class="site-nav-link link current">Студия</a></li>
-                    <li><a href="./portfolio.html" class="site-nav-link link">Портфолио</a></li>
-                    <li><a href="" class="site-nav-link link">Контакты</a></li>
+                    <li class="site-nav-item"><a href="./index.html" class="site-nav-link link current">Студия</a></li>
+                    <li class="site-nav-item"><a href="./portfolio.html" class="site-nav-link link">Портфолио</a></li>
+                    <li class="site-nav-item"><a href="" class="site-nav-link link">Контакты</a></li>
                 </ul>
             </nav>
             
             <ul class="contact-nav list">
-                <li><a href="mailto:info@devstudio.com" class="contact-nav-link link">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="contact-nav-link link">+38 096 111 11 11</a></li>
+                <li class="contact-nav-item"><a href="mailto:info@devstudio.com" class="contact-nav-link link">info@devstudio.com</a></li>
+                <li class="contact-nav-item"><a href="tel:+380961111111" class="contact-nav-link link">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -37,8 +37,10 @@
     <main>
         <!--Hero-->
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button">Заказать услугу</button>
+            <div class="container">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="button">Заказать услугу</button>
+            </div>
         </section>
         <!--Особенности-->
         <section class="section">
@@ -46,25 +48,25 @@
                 <h2 class="visually-hidden">Особенности</h2>
                 
                 <ul class="peculiarities list">
-                    <li>
+                    <li class="peculiarities-item">
                         <h3 class="peculiarities-title">Внимание к деталям</h3>
                         <p class="peculiarities-text">
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
-                    <li>
+                    <li class="peculiarities-item">
                         <h3 class="peculiarities-title">Пунктуальность</h3>
                         <p class="peculiarities-text">
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
-                    <li>
+                    <li class="peculiarities-item">
                         <h3 class="peculiarities-title">Планирование</h3>
                         <p class="peculiarities-text">
                             Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
-                    <li>
+                    <li class="peculiarities-item">
                         <h3 class="peculiarities-title">Современные технологии</h3>
                         <p class="peculiarities-text">
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -78,10 +80,10 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 
-                <ul class="list">
-                    <li><img src="./images/box1.jpg" alt="Реализация проекта по алгоритму" width="370" height="294"></li>
-                    <li><img src="./images/box2.jpg" alt="Оптимизация макета под смартфон" width="370" height="294"></li>
-                    <li><img src="./images/box3.jpg" alt="Выбор из палитры цветов" width="370" height="294"></li>
+                <ul class="list activity-list">
+                    <li class="activity-item"><img src="./images/box1.jpg" alt="Реализация проекта по алгоритму" width="370" height="294"></li>
+                    <li class="activity-item"><img src="./images/box2.jpg" alt="Оптимизация макета под смартфон" width="370" height="294"></li>
+                    <li class="activity-item"><img src="./images/box3.jpg" alt="Выбор из палитры цветов" width="370" height="294"></li>
                 </ul>
             </div>
         </section>
@@ -90,7 +92,7 @@
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 
-                <ul class="list">
+                <ul class="list team-list">
                     <li class="team-item">
                         <img src="./images/team1.jpg" alt="Парень в коричневой рубашке" width="270" height="260">
                         <h3 class="team-title">Игорь Демьяненко</h3>
